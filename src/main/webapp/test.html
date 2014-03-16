@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- To run the current sample code in your own environment, copy this to an html page. -->
+
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery.js"></script>
+ <!--  <base href="http://www.jsviews.com/samples/"/>
+  <link href="samples.css" rel="stylesheet"/> -->
+  <script src="http://www.jsviews.com/download/jsviews.js"></script>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script id="theTmpl" type="text/x-jsrender">
+<div>
+   <em>Name:</em> {{:name}}
+   {{if showNickname && nickname}}
+      (Goes by <em>{{:nickname}}</em>)
+   {{/if}}
+</div>
+</script>
+
+<script>
+var data = [
+  {
+    "name": "Robert",
+    "nickname": "Bob",
+    "showNickname": true
+  },
+  {
+    "name": "Susan",
+    "nickname": "Sue",
+    "showNickname": false
+  }
+];
+
+var template = $.templates("#theTmpl");
+
+template.link("#result", data);
+</script>
+
+</body>
+</html>
