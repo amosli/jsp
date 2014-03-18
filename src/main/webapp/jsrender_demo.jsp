@@ -3,10 +3,9 @@
 
 <html>
 <head>
-  <script src="http://code.jquery.com/jquery.js"></script>
- <!--  <base href="http://www.jsviews.com/samples/"/>
-  <link href="samples.css" rel="stylesheet"/> -->
-  <script src="http://www.jsviews.com/download/jsviews.js"></script>
+	 <script src="js/jquery.js"></script>
+    <script src="js/jsviews.js"></script>
+  
 </head>
 <body>
 
@@ -21,7 +20,7 @@
 </div>
 </script>
 
-<script>
+<script type="text/javascript">
 var data = [
   {
     "name": "Robert",
@@ -36,8 +35,8 @@ var data = [
 ];
 
 var template = $.templates("#theTmpl");
-
 template.link("#result", data);
+
 </script>
 
 </body>

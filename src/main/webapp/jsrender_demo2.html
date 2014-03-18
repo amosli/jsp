@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- To run the current sample code in your own environment, copy this to an html page. -->
+
+<html>
+<head>
+	 <script src="js/jquery.js"></script>
+    <script src="js/jsviews.js"></script>
+  
+</head>
+<body>
+
+<div id="result"></div>
+
+<script id="theTmpl" type="text/x-jsrender">
+<b>{{:#index+1}}</b>
+
+</script>
+
+<script>
+var data = [
+{
+    "name": "Heidi",
+    "address": {
+      "city": "Sidney"
+    }
+  },
+  {
+	    "name": "Heidi",
+	    "address": {
+	      "city": "Sidney"
+	    }
+	  }
+  ,{
+	    "name": "Heidi",
+	    "address": {
+	      "city": "Sidney"
+	    }
+	  }
+  ,{
+	    "name": "Heidi",
+	    "address": {
+	      "city": "Sidney"
+	    }
+	  },
+	  {
+		    "name": "Heidi",
+		    "address": {
+		      "city": "Sidney"
+		    }
+		  }
+	  ,{
+		    "name": "Heidi",
+		    "address": {
+		      "city": "Sidney"
+		    }
+		  }
+];
+
+var template = $.templates("#theTmpl");
+
+template.link("#result", data);
+</script>
+
+</body>
+</html>
