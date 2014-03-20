@@ -6,6 +6,19 @@ public class Person {
 	private String name="amosli";
 	private Integer age;
 	private Date birthday;
+	private Address address;
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public Person(String name) {
+		this.name = name;
+	}
+	public Person(){
+		
+	}
 	public String getName() {
 		return name;
 	}
