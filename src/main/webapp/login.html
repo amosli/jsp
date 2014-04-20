@@ -7,38 +7,40 @@ body {
 	padding: 0px;
 	font-size: 14px;
 	overflow: hidden;
-	background-color: 3572B1;
-	
+	background-color: 016aa9;
+	text-align: center;
 }
 
 #container {
-	width: 100%;
+	width: 980px;
 }
 
 #login {
 	background-image: url("img/login.png");
 	width: 435px;
 	height: 218px;
-	margin-left:20%;  
-	margin-top: 20%;
+	margin-left: 300px;
+	margin-top: 220px;
 	text-align: center;
 }
-#form{
-	margin-top: 135px;
-}
 
+#loginform{
+	margin-top: 250px
+
+}
 </style>
 </head>
 <body>
 	<div id="container">
 		<div id="login">
-			<form action="" id="form">
-			用户名:<input type="text" name="username" /><br> 
-			密  码:<input
-				type="password" name="password" /><br>
-			<button type="submit">登 录</button>
-			<button type="button" onclick="">注册</button>
-			</form>
+			<div id="loginform">
+				<form>
+					用户名:<input type="text" name="username" /><br> 
+					密 码:<input  type="password" name="password" /><br> 
+					<input type="submit" value="登陆"/> 
+					<input type="button" value="注册"/>
+				</form>
+			</div>
 		</div>
 	</div>
 
